@@ -1,10 +1,21 @@
 /* src/styles.css */
 
 body {
-  font-family: Poppins;
-  background-color: #ffc300;
+  font-family: "Montserrat";
+  background-color: #000000;
   margin: 0;
   padding: 0;
+}
+
+h1,
+p {
+  background: -webkit-linear-gradient(#c2cad7, #f94c57);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  color: #fc3c44;
 }
 
 .container {
@@ -15,31 +26,34 @@ body {
 .container-nav {
   display: flex;
   justify-content: space-around;
-  margin: 20px;
+  margin-left: 0px;
+  background-color: rgb(19, 17, 17);
   border-style: solid;
-  border-color: rgb(0, 0, 0);
-  border-radius: 20px;
 }
 
 .container > div {
   flex: 1;
   padding: 20px;
-  background-color: #02bbe1;
-  box-shadow: 10px 10px 20px #003566;
+  background-color: #c2cad7;
+  box-shadow: 10px 10px 20px#f94c57;
   border-style: solid;
-  border-color: #00b4d8;
+  border-color: #c2cad7;
   border-radius: 50px;
   margin: 80px;
-  animation: animate 2s linear infinite;
 }
 
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.search {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.container-title {
+  margin-left: 50px;
 }
 
 ul {
@@ -56,16 +70,29 @@ li {
 
 button {
   padding: 10px 20px;
-  margin: 10px;
   font-size: 16px;
   border: none;
-  background-color: #000596;
-  color: #fff;
+  background-color: #292a29;
+  border-radius: 9px;
+  color: #c2cad7;
   cursor: pointer;
+  margin-top: 20px;
+  margin-right: 220px;
+  animation: animName 2s linear infinite;
+  color: white;
+}
+
+@keyframes animName {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #f059ac;
 }
 
 @media (max-width: 768px) {
@@ -78,4 +105,29 @@ button:hover {
     width: 100%;
     margin-bottom: 20px;
   }
+}
+
+.card-header {
+  margin-bottom: 60px;
+}
+
+.card {
+  margin-top: 30px;
+}
+
+.card-text {
+  margin-top: 5px;
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+h1.Center-text {
+  text-align: center;
+  align-items: center;
+  font-size: 60px;
+}
+
+.logow {
+  margin-left: 695px;
+  font-size: 5rem;
 }
